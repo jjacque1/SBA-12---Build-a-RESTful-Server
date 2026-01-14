@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 });
 
 //Mount movie routes with /api prefixed
-// app.use("/api", movieRouter)
+app.use("/api", movieRouter)
 
 // Start server
 app.listen(PORT, () => {

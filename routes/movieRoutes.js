@@ -3,10 +3,10 @@ const router = express.Router();
 const movieController = require("../controllers/movieController");
 
 // Search movies by title
-router.get("/search", movieController.searchMovie);
+router.get("/search", movieController.searchMovies);
 
 // Get movie details by IMDb ID
-router.get("/movies/:id", movieController.movieDetails);
+router.get("/movies/:id", movieController.getMovieDetails);
 
 //Export the router.
 module.exports = router;
